@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-main{
+    background-color: rgb(245, 234, 234);
+}
+#carouselExampleIndicators{
+    height: 500px;
+}
+.carousel-inner{
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+}
+.d-block .w-100{
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+}
+.font-family{
+    font-family: cursive;
+    font-weight: bold;
+    font-size: larger;
+}
+.font-family2{
+    font-family: cursive;
+    font-weight: bold;
+}
+#underline{
+    text-decoration: underline;
+}
+#underline2{
+    text-decoration: underline;
+}
+/* .less1000{
+    font-size: small;
+} */
+@media all and (max-width: 1000px){
+    .less1000{
+        font-size: smaller;
+    }
+}
+@media all and (max-width: 1000px){
+    img{
+        max-height: 315px;  
+    }
+    .carousel{
+        max-height: 315px;
+    }
+
+}
+@media all and (max-width: 500px){
+    .carousel{
+        max-height: 255px;
+    }
+    .carousel .carousel-inner .carousel-control-next .carousel-control-prev{
+        margin-bottom: 0px;
+        max-height: 200px;
+    }
+    .container-main{
+        margin-top: 0px;
+    }
+
+}
+@media all and (max-width: 400px){
+    .carousel{
+        max-height: 190px;
+    }
+    .trump{
+        max-width: 100%;
+        height: 180px; 
+    }
+    
+
+}
+
+
+.font{
+    font-family: cursive;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    color: rgb(1, 100, 1);
+}
+
+form{
+    max-width: 60%;
+}
+.createnote{
+    font-size: 1.5rem;
+    color: green;
+}
+
+.input{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+}
+
+.btncreate{
+    width: 25%;
+    display: inline-block;
+    background-color: green;
+    color: white;
+    font-size: 1.1em;
+    padding: 10px;
+    border-radius: 10px;
+}  
+
+/* news section */
+
+.news-wrapper{
+    max-width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid green;
+} 
+
+.delete{
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+
+}
+
+.error{
+    display: inline-block;
+    font-size: 1.3rem;
+    padding: 10px;
+    border: 1px solid red;
+    color: red;
+}
+
+.success{
+    display: inline-block;
+    font-size: 1.3rem;
+    padding: 10px;
+    border: 1px solid green;
+    color: green;
+}
+

@@ -1,0 +1,22 @@
+extends home.pug
+
+
+block content
+
+  .card 
+    h1.card-title.font-family.createnote Create News! 
+
+  if error 
+    p.error Some error occured! Try again!
+
+  if success
+    p.success News was successfully created!!! 
+
+  form.form(action="/create" method='Post')
+    h5.card-title.font-family Title 
+    input.input(type="text" name='title')
+
+    h5.card-title.font-family Description 
+    textarea.input(name="description", type="text") 
+
+    button.btncreate  Create News
