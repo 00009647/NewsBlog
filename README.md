@@ -22,4 +22,4 @@ news app
  - pug.js
 
 ### Web application repository on github
-link to github repo: https://github.com/00009647/NewsBlog
+[link to github repo](https://github.com/00009647/NewsBlog)
