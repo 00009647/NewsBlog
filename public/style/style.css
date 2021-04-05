@@ -162,3 +162,8 @@ form{
     color: green;
 }
 
+
+
+.navbar-brand.text-white.font-family{
+    padding: 5px 20px;
+}
