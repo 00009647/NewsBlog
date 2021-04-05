@@ -4,7 +4,11 @@ block news
   div.container 
     h1.font All added news 
 
-    each newz in news 
+    if deleted 
+      p.success Deleted!
+
+    
+    each newz in news
       div.news-wrapper 
         a.newz(href=`/news/${ newz.id }`) #{ newz.title }
-        a.delete(href='#') delete
+        a.delete(href=`/news/${ newz.id }/delete`) delete

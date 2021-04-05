@@ -99,17 +99,32 @@ form{
     padding: 10px;
     font-size: 1.1rem;
     border: 1px solid #ccc;
+    
 }
 
 .btncreate{
     width: 25%;
     display: inline-block;
-    background-color: green;
+    background-color: rgb(6, 167, 6);
     color: white;
     font-size: 1.1em;
-    padding: 10px;
+    padding: 5px;
     border-radius: 10px;
+    font-family: cursive;
+    margin: 2px;
 }  
+@media all and (max-width: 1000px){
+    .input{
+        padding: 5px;
+
+    }
+    .btncreate{
+        font-size: 0.5rem;
+        padding: 5px;
+        border-radius: 5px;
+
+    }
+}
 
 /* news section */
 
