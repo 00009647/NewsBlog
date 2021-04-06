@@ -17,6 +17,10 @@ npm install
 ```bash
 news app
 ``` 
+4. Access the api
+```bash
+localhost:8000/api/v1/news
+``` 
 ### Web application dependencies
  - express.js
  - pug.js

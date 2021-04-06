@@ -60,32 +60,22 @@ main.container.container-main
 main.container.container-main.mt-2
   .card-columns
     .card
-      img.card-img-top(src='./static/images/atrump-2815558_1920.jpg' alt='Card image cap')
+      img.card-img-top(src='https://static.politico.com/dims4/default/379be32/2147483647/resize/1160x/quality/90/?url=https%3A%2F%2Fstatic.politico.com%2Fd3%2Fb1%2F7acab9bd47da9d250ab9bfb97c23%2Fwebp.net-resizeimage%20-%202021-03-31T201625.374.jpg' alt='Card image cap')
       .card-body.less1000
         h5.card-title.font-family Tramps&grave; economic achievement
         p.card-text
           | President Joe Biden is using his infrastructure plan to take aim at President Donald Trump&apos;s signature economic achievement: his corporate tax cuts.
     .card
-      img.card-img-top(src='./static/images/korea.jpeg' alt='Card image cap')
+      img.card-img-top(src='https://static.politico.com/dims4/default/1b5efcc/2147483647/resize/1160x/quality/90/?url=https%3A%2F%2Fstatic.politico.com%2Fe9%2F7a%2F6a61876e4cc290b80501adddb391%2Fgettyimages-951833242-2.jpg' alt='Card image cap')
       .card-body.less1000
         h5.card-title.font-family The North Korean leader has plans for the future
         p.card-text
           | SEOUL, South Korea &mdash; North Korea called South Korea&rsquo;s president &ldquo;a parrot raised by America&rdquo; on Tuesday, resuming its trademark derisive rhetoric against its rivals amid renewed animosities on the Korean Peninsula.
         p.card-text
           small.text-muted Last updated 3 mins ago
-    //
-      <div class="card p-3">
-      <blockquote class="blockquote mb-0 card-body">
-      <p>Court voids Trump campaign's non-disclosure agreement</p>
-      <footer class="blockquote-footer">
-      <small class="text-muted">
-      Someone famous in <cite title="Source Title">Source Title</cite>
-      </small>
-      </footer>
-      </blockquote>
-      </div>
+
     .card
-      img.card-img-top(src='./static/images/barack-obama-1199638_1920.jpg' alt='Card image cap')
+      img.card-img-top(src='https://static.politico.com/0b/28/8d965eab416b89991de2610fdc27/gettyimages-1229314653-1.jpg' alt='Card image cap')
       .card-body.less1000
         h5.card-title.font-family New infrastructure of the President Biden
         p.card-text Biden&rsquo;s infrastructure plan takes aim at Trump&rsquo;s biggest economic achievement
@@ -102,7 +92,7 @@ main.container.container-main.mt-2
             cite(title='Source Title') Source Title
     // russia
     .card
-      img.card-img(src='./static/images/night-1450087_1920.jpg' alt='Card image')
+      img.card-img(src='https://cdn.pixabay.com/photo/2016/08/03/22/37/moscow-city-1568042__480.jpg' alt='Card image')
     .card.p-3.text-right
       blockquote.blockquote.mb-0.less1000
         h5.card-title.font-family 12O Year service
@@ -115,7 +105,7 @@ main.container.container-main.mt-2
             cite(title='Source Title') Updated: 18 hours ago
     // arni
     .card
-      img.card-img-top(src='./static/images/arnold.jpeg' alt='Card image cap')
+      img.card-img-top(src='https://static.politico.com/dims4/default/d3c28d6/2147483647/resize/1160x/quality/90/?url=https%3A%2F%2Fstatic.politico.com%2F43%2F93%2F72ae7b2347978461d93f010fd090%2F210331-schwarzeneggerap-773.jpg' alt='Card image cap')
       .card-body.less1000
         h5.card-title.font-family Schwarzenegger&grave;s warning 
         p.card-text
@@ -130,10 +120,19 @@ main.container.container-main.mt-2
     .container
       h1.display-4.lead.text-white.less1000.font-family2 World&grave;s greatest news!
       p.lead.text-white.blockquote-footer
-        | This is a modified jumbotron that occupies the entire horizontal space of its parent.
+        | “This web application was created to fulfill Web Technology module’s requirements and does not represent an actual company or service”.
               
 
-
+  script.
+        document.querySelector("#myFileInput").addEventListener("change", function () {
+        const reader = new FileReader();
+        
+        reader.addEventListener("load", () => {
+        localStorage.setItem("recent-image", reader.result);
+        })
+        
+        reader.readAsDataURL(this.files[0]);
+        })
 
 
 

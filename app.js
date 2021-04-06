@@ -22,3 +22,13 @@ app.listen(8000, err=> {
     if(err) console.log(err)
     console.log('Your server is running on the port 8000')
 })
+                   // API 
+app.get('/api/v1/news', (req, res) => {
+  fs.readFile('./data/news.json', (err, data) => {
+    if (err) throw err
+  
+    const news = JSON.parse(data)
+  
+    res.json(news)
+  })
+})

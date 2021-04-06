@@ -11,10 +11,9 @@ const v = new Validator()
 
 const db = `${rootFolder}/data/news.json`
 
-router.get('/', (req, res)=>{
+router.get('/', (req, res) => {
   res.render('create')
 })
-
 
 router.post("/create", (req, res) => {
   if (v.isValid(req.body)) {
@@ -51,6 +50,7 @@ router.post('/', (req, res)=>{
     })
   }
 })
+
 
 module.exports = router
 

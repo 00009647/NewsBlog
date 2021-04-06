@@ -104,14 +104,15 @@ form{
 
 .btncreate{
     width: 25%;
-    display: inline-block;
+    display: block;
     background-color: rgb(6, 167, 6);
     color: white;
     font-size: 1.1em;
     padding: 5px;
     border-radius: 10px;
     font-family: cursive;
-    margin: 2px;
+    margin: 5px;
+
 }  
 @media all and (max-width: 1000px){
     .input{
