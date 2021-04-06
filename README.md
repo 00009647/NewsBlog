@@ -15,7 +15,7 @@ npm install
 ```
 3. Run the application
 ```bash
-news app
+node app
 ``` 
 4. Access the api
 ```bash
