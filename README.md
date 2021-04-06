@@ -28,5 +28,5 @@ localhost:8000/api/v1/news
 ### Web application repository on github
 [link to github repo](https://github.com/00009647/NewsBlog)
 
-### Web application repository on github
-https://ruddy-salty-serpent.glitch.me/
+### Link to the application on glitch
+[link to Glitch](https://ruddy-salty-serpent.glitch.me/)
